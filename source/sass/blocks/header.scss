@@ -1,0 +1,50 @@
+.header__flex-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__logo-caption {
+  margin: 0;
+  padding: 0;
+}
+
+.header__logo-text {
+  margin: 0;
+  padding: 0;
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item-link {
+  text-decoration: none;
+}
+
+.header__call-link {
+  text-decoration: none;
+}
+
+.header__caption {
+  padding: 0;
+  margin: 0;
+}
+
+.header__text {
+  margin: 0;
+  padding: 0;
+}
+
+.header__link {
+  text-decoration: none;
+}
