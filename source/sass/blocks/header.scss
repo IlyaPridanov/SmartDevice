@@ -1,4 +1,5 @@
 .header {
+  padding: 35px 0;
   background-color: #000000;
 }
 
@@ -15,25 +16,36 @@
   flex-wrap: wrap;
 }
 
+.header__logo-img {
+  margin-right: 17px;
+  margin-top: 2px;
+  width: 60px;
+  height: 58px;
+}
+
 .header__logo-caption {
   margin: 0;
+  margin-top: 10px;
   padding: 0;
 
   font-family: 'Roboto Condensed', "Arial", sans-serif;
   font-size: 25px;
-  font-weight: 400;
-  line-height: calc(29/25);
+  font-weight: 700;
+  line-height: calc(29.3/25);
+  letter-spacing: 1.3px;
   color: #ffffff;
 }
 
 .header__logo-text {
   margin: 0;
+  margin-top: 4px;
   padding: 0;
 
   font-family: 'Roboto', "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: calc(14/12);
+  letter-spacing: 0.7px;
   color: #788891;
 }
 
@@ -46,7 +58,17 @@
   align-items: center;
 }
 
+.header__item {
+  margin-left: 56px;
+
+  &--tel {
+    margin-left: 98px;
+  }
+}
+
 .header__item-link {
+  display: flex;
+
   text-decoration: none;
   font-family: 'PT Mono', "Arial", monospace;
   font-weight: 400;
@@ -59,16 +81,72 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 45px;
+  width: 200px;
+  height: 50px;
 
   font-family: 'Roboto Condensed', "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
+  line-height: calc(16.41/14);
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
   color: #ffffff;
 
   border: 1px solid #ffffff;
   border-radius: 5px;
+}
+
+.header__item-text {
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.header__item-svg--tel {
+  margin-right: 17px;
+  width: 20px;
+  height: 20px;
+}
+
+.header__item-svg--mail {
+  margin-right: 23px;
+  width: 21px;
+  height: 18px;
+}
+
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header__call-link {
+    display: none;
+  }
+
+  .header__item-svg--mail {
+    width: 25px;
+    height: 19px;
+  }
+
+  .header__item-svg--mail {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__logo-img {
+    width: 38px;
+    height: 38px;
+  }
+  .header__logo-textblock {
+    display: none;
+  }
+
+  .header__item-text {
+    display: none;
+  }
 }
