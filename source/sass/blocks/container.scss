@@ -1,17 +1,17 @@
 .container {
   /*width: 1411px;*/
-  margin-left: 280px;
-  margin-right: 71px;
+  margin-left: 255px;
+  margin-right: 255px;
 }
 
 @media (max-width: 1024px) {
   .container {
-    margin: 0 15px;
+    margin: 0 25px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    min-width: 300px;
+    margin: 0 17px;
   }
 }
