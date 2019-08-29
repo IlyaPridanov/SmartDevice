@@ -24,6 +24,7 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -36,6 +37,9 @@ body {
   font-style: normal;
   color: #212327;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 *,

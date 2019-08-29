@@ -1,0 +1,40 @@
+.footer-down {
+  border-top: 1px solid rgba(98, 105, 98, 0.2);
+}
+
+.footer-down__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-down__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.footer-down__link {
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: calc(24 / 13);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1B2D37;
+
+  opacity: 0.5;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
