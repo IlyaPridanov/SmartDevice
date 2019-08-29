@@ -1,6 +1,7 @@
 .footer-center__flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-center__nav-block {
@@ -59,6 +60,12 @@
 
   .footer-center__nav {
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+  }
+
+  .footer-center__caption-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .footer-center__caption-link {

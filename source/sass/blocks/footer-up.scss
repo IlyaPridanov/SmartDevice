@@ -30,6 +30,8 @@
   .footer-up__flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .footer-up__link {
@@ -39,6 +41,6 @@
 
 @media (max-width: 768px) {
   .footer-up__flex {
-    display: block;
+    flex-direction: column;
   }
 }
