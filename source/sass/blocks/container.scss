@@ -2,16 +2,60 @@
   /*width: 1411px;*/
   margin-left: 255px;
   margin-right: 255px;
+
+  &--up {
+    margin: 0;
+  }
+
+  &--center {
+    margin: 0;
+  }
+
+  &--center-mobile {
+    margin: 0;
+  }
 }
 
 @media (max-width: 1024px) {
   .container {
     margin: 0 25px;
+
+    &--up-center {
+      margin: 0;
+    }
+
+    &--up {
+      margin: 0 25px;
+    }
+
+    &--center {
+      margin: 0 25px;
+    }
+
+    &--center-mobile {
+      margin: 0;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .container {
     margin: 0 17px;
+
+    &--up-center {
+      margin: 0;
+    }
+
+    &--up {
+      margin: 0 17px;
+    }
+
+    &--center {
+      margin: 0;
+    }
+
+    &--center-mobile {
+      margin: 0 17px;
+    }
   }
 }

@@ -27,6 +27,11 @@
 }
 
 @media (max-width: 768px) {
+  .footer-center__caption-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .footer-down__list {
     display: block;
   }
