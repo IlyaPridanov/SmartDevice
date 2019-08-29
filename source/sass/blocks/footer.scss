@@ -2,3 +2,14 @@
   flex: 0 0 auto;
   background: #FAFAFA;
 }
+
+.footer__flex-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .footer__flex-block {
+    display: block;
+  }
+}
