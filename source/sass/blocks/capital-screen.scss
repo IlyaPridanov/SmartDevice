@@ -89,7 +89,7 @@
   top: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .capital-screen__caption {
     font-size: 60px;
     line-height: calc(70 / 60);
@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .capital-screen__caption {
     font-size: 40px;
     line-height: calc(47 / 40);
