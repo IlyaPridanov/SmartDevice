@@ -20,6 +20,10 @@
     margin-right: 70px;
   }
 
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+
   &:last-child {
     margin-right: 0;
     margin-left: auto;

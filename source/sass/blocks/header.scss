@@ -23,6 +23,10 @@
 .header__item {
   margin-left: 48px;
 
+  &--mail {
+    margin-left: 0;
+  }
+
   &--tel {
     margin-left: 85px;
   }
