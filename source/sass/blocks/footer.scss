@@ -1,9 +1,12 @@
 .footer {
   flex: 0 0 auto;
   background: #FAFAFA;
+  /*background: rgb(0, 0, 0);*/
 }
 
 .footer__flex-block {
+  padding-top: 60px;
+  padding-bottom: 58px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -12,5 +15,8 @@
 @media (max-width: 1024px) {
   .footer__flex-block {
     display: block;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
+

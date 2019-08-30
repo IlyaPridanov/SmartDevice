@@ -30,6 +30,9 @@
   color: #ffffff;
 
   &--footer {
+    margin-top: 12px;
+
+    /*letter-spacing: 1px;*/
     color: #203C42;
   }
 }
@@ -52,11 +55,19 @@
     margin-right: 16px;
     width: 53px;
     height: 58px;
+
+    &--footer {
+      margin-top: 0px;
+    }
   }
 
   .logo-caption {
     margin-top: 11px;
     letter-spacing: normal;
+
+    &--footer {
+      margin-top: 6px;
+    }
   }
 
   .logo-text {
@@ -69,6 +80,11 @@
   .logo-img {
     width: 38px;
     height: 38px;
+
+    &--footer {
+      width: 52px;
+      height: 52px;
+    }
   }
 
   .logo-textblock {
