@@ -1,13 +1,19 @@
 .capital-screen {
   position: relative;
   z-index: 5;
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 203px;
+  padding-bottom: 274px;
+
+  background-image: url("../img/triangle-1-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 80% 160px;
 }
 
 .capital-screen__caption {
   z-index: 5;
   margin: 0;
+  margin-left: 9px;
+  margin-bottom: 26px;
   padding: 0;
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -23,7 +29,8 @@
 .capital-screen__text {
   position: relative;
   margin: 0;
-  margin-left: 98px;
+  margin-left: 107px;
+  margin-bottom: 44px;
   padding: 0;
   width: 620px;
 
@@ -40,8 +47,8 @@
 
     width: 66px;
     height: 2px;
-    left: -90px;
-    top: 19px;
+    left: -95px;
+    top: 18px;
 
     background: #FFFFFF;
   }
@@ -53,7 +60,7 @@
   align-items: center;
   width: 407px;
   height: 55px;
-  margin-left: 98px;
+  margin-left: 106px;
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -85,52 +92,85 @@
 .capital-screen__img {
   position: absolute;
   z-index: -1;
-  left: 1038px;
-  top: 0;
+  left: 54%;
+  top: 146px;
 }
 
 @media (max-width: 1023px) {
+  .capital-screen {
+    padding-top: 113px;
+    padding-bottom: 274px;
+    background-image: url("../img/triangle-1-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 156% 7px;
+  }
+
   .capital-screen__caption {
+    margin-left: 63px;
+    margin-bottom: 29px;
+    width: 470px;
+
     font-size: 60px;
     line-height: calc(70 / 60);
   }
 
   .capital-screen__text {
+    margin-left: 114px;
+    margin-bottom: 55px;
+    width: 356px;
+
     font-size: 18px;
     line-height: 1.6;
-    width: 356px;
 
     &::after {
       content: "";
+      left: -48px;
+      top: 16px;
       width: 33px;
       height: 2px;
     }
   }
 
   .capital-screen__link {
+    margin-left: 114px;
     width: 379px;
   }
 
   .capital-screen__img {
-    left: 538px;
+    left: 66%;
+    top: 37px;
+
     width: 465px;
     height: 340px;
   }
 }
 
 @media (max-width: 767px) {
+  .capital-screen {
+    padding-top: 230px;
+    padding-bottom: 70px;
+
+    background-image: url("../img/triangle-1-mobile.png");
+    background-position: -122% 15px;
+  }
+
   .capital-screen__caption {
+    margin-left: 0;
+    margin-bottom: 27px;
+    width: 277px;
     font-size: 40px;
     line-height: calc(47 / 40);
   }
 
   .capital-screen__text {
-    margin-left: 40px;
+    margin-left: 51px;
+    margin-bottom: 40px;
     font-size: 16px;
     width: 245px;
 
     &::after {
-      left: -10px;
+      left: -48px;
+      top: 15px;
     }
   }
 
@@ -140,9 +180,10 @@
   }
 
   .capital-screen__img {
-    left: 31px;
+    left: 50%;
     width: 301px;
     height: 220px;
+    transform: translateX(-45%);
   }
 
   .capital-screen__link-text--desktop {
