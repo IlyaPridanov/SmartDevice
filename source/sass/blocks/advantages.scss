@@ -11,9 +11,27 @@
 
   border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
+
+  &:hover {
+    background-color: #00B2FF;
+
+    cursor: pointer;
+  }
 }
 
-.advantages__link path {
+.advantages__link:hover .advantages__caption {
+  color: #FFFFFF;
+}
+
+.advantages__link:hover .advantages__text {
+  color: #FFFFFF;
+}
+
+.advantages__link:hover .advantages__svg {
+  fill: #FFFFFF;
+}
+
+.advantages__link .advantages__svg {
   fill: #00B2FF;
 }
 
