@@ -2,5 +2,18 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 0.71;
+  line-height: 1;
+}
+
+@media (max-width: 1023px) {
+  .screen-caption {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .screen-caption {
+    font-size: 28px;
+  }
 }

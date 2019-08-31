@@ -4,27 +4,35 @@
 }
 
 .main__bcg-block {
+  padding-bottom: 105px;
   background-color: #FFFFFF;
 }
 
 .main__bcg-img-block {
   background:
-    url("../img/triangle-2-desktop.svg") no-repeat,
-    url("../img/triangle-3-desktop.svg") no-repeat,
-    url("../img/triangle-4-desktop.svg") no-repeat,
-    url("../img/triangle-5-desktop.svg") no-repeat;
+    url("../img/triangle-2-desktop.svg") no-repeat 0px 445px,
+    url("../img/triangle-3-desktop.svg") no-repeat 12.6% 46px,
+    url("../img/triangle-4-desktop.svg") no-repeat 53.3% 147px,
+    url("../img/triangle-5-desktop.svg") no-repeat 98.2% 397px;
 }
 
 @media (max-width: 1023px) {
+  .main__bcg-block {
+    padding-bottom: 83px;
+  }
+
   .main__bcg-img-block {
-    background-image: url("../img/triangle-5-desktop.svg");
+    background-image: url("../img/triangle-6-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 521px 629px;
-    background-position: 10px 10px;
+    background-position: 100% 90px;
   }
 }
 
 @media (max-width: 767px) {
+  .main__bcg-block {
+    padding-bottom: 66px;
+  }
+
   .main__bcg-img-block {
     background-position: 20px 20px;
   }
