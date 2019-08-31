@@ -6,3 +6,26 @@
 .main__bcg-block {
   background-color: #FFFFFF;
 }
+
+.main__bcg-img-block {
+  background:
+    url("../img/triangle-2-desktop.svg") no-repeat,
+    url("../img/triangle-3-desktop.svg") no-repeat,
+    url("../img/triangle-4-desktop.svg") no-repeat,
+    url("../img/triangle-5-desktop.svg") no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .main__bcg-img-block {
+    background-image: url("../img/triangle-5-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 521px 629px;
+    background-position: 10px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__bcg-img-block {
+    background-position: 20px 20px;
+  }
+}

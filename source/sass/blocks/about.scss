@@ -1,0 +1,65 @@
+.about {
+  display: flex;
+  margin: 0 100px;
+}
+
+.about__caption {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+
+  color: #666666;
+}
+
+.about__text {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+
+  color: #666666;
+}
+
+.about__link {
+  margin-left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+  height: 45px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #00B2FF;
+
+  border: 1px solid #00B2FF;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.about__img {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .about__img {
+    display: none;
+  }
+}
