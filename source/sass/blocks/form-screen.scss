@@ -1,3 +1,45 @@
 .form-screen {
+  padding-top: 98px;
+  padding-bottom: 112px;
+
   background-color: #00B2FF;
+  background-image:
+    url("../img/triangle-1-desktop.webp"),
+    url("../img/triangle-7-desktop.svg"),
+    url("../img/triangle-8-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 15% center, 99.2% 39px, 100% 285px;
+}
+
+.form-screen__wrap-block {
+  position: relative;
+  margin-left: 50%;
+}
+
+.form-screen__img {
+  position: absolute;
+  top: 60px;
+  right: calc(152% - 275px);
+}
+
+.form-screen__form {
+  margin-left: 10px;
+}
+
+@media (max-width: 1023px) {
+  .form-screen {
+    padding-top: 85px;
+    padding-bottom: 103px;
+
+    background-image: none;
+  }
+
+  .form-screen__wrap-block {
+    margin: 0 auto;
+    width: 594px;
+  }
+
+  .form-screen__form {
+    margin-left: 0;
+  }
 }

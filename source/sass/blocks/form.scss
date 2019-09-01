@@ -1,5 +1,245 @@
 .form__caption {
   margin: 0;
+  margin-bottom: 18px;
   padding: 0;
   color: #FFFFFF;
+}
+
+.form__flex-block {
+  display: flex;
+}
+
+.form__text {
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 49px;
+  padding: 0;
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+
+  color: #FFFFFF;
+}
+
+.form__input {
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 25px;
+  margin-bottom: 41px;
+  padding-left: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 50px;
+
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+
+  color: #FFFFFF;
+
+  background: #19BAFF;
+  border: none;
+
+  &::placeholder {
+    font-family: "PT Mono", "Arial", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+
+    color: #FFFFFF;
+  }
+}
+
+.form__textarea {
+  resize: none;
+
+  margin-left: 5px;
+  margin-bottom: 35px;
+  padding-left: 18px;
+  padding-top: 15px;
+  width: 570px;
+  min-height: 154px;
+
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+
+  color: #FFFFFF;
+
+  background: #19BAFF;
+  border: none;
+
+  &::placeholder {
+    font-family: "PT Mono", "Arial", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+
+    color: #FFFFFF;
+  }
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+  width: 270px;
+  height: 45px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+
+  background-color: #00B2FF;
+}
+
+.form__checkbox-label {
+  position: relative;
+
+  margin-left: 70px;
+  margin-top: 10px;
+  width: 230px;
+
+  font-family: "PT Mono", "Arial", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: #FFFFFF;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -2px;
+    left: -33px;
+
+    border: 1px solid #FFFFFF;
+
+    background-image: none;
+  }
+}
+
+.form__checkbox:checked ~ .form__checkbox-label {
+  &::after {
+    background-image: url("../img/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .form-screen__img {
+    display: none;
+  }
+
+  .form__caption {
+    margin-bottom: 24px;
+  }
+
+  .form__text {
+    margin-bottom: 54px;
+  }
+
+  .form__input {
+    margin-left: 0;
+    margin-right: 0;
+    height: 52px;
+    width: 280px;
+  }
+
+  .form__flex-block {
+    justify-content: space-between;
+    margin-left: 4px;
+  }
+
+  .form__textarea {
+    margin-bottom: 36px;
+    width: 590px;
+    min-height: 160px;
+  }
+
+  .form__submit {
+    margin-left: 0;
+    width: 280px;
+    height: 47px;
+  }
+
+  .form__checkbox-label {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-screen {
+    padding-top: 33px;
+    padding-bottom: 44px;
+  }
+
+  .form__caption {
+    line-height: 1.3;
+    margin-bottom: 17px;
+  }
+
+  .form-screen__wrap-block {
+    margin: 0;
+    width: auto;
+  }
+
+  .form__flex-block {
+    display: block;
+    margin-left: 0;
+  }
+
+  .form__text {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .form__input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .form__textarea {
+    margin-left: 0;
+    margin-bottom: 22px;
+    width: 100%;
+    min-height: 105px;
+  }
+
+  .form__submit {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .form__checkbox-label {
+    display: block;
+    margin-right: 0;
+    margin-left: 34px;
+
+    &::after {
+      top: 1px;
+    }
+  }
 }
