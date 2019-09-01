@@ -1,0 +1,175 @@
+.product {
+  background: #1B2D37;
+  padding-top: 97px;
+  padding-bottom: 125px;
+}
+
+.product__wrap-block {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.product__caption {
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 55px;
+  padding: 0;
+
+  color: #FFFFFF;
+}
+
+.product__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__item {
+  margin: 0;
+  width: 32.1%;
+}
+
+.product__link {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  padding-top: 50px;
+  min-height: 627px;
+
+  text-decoration: none;
+
+  border: 3px solid #1B2D37;
+
+  background-repeat: no-repeat;
+
+  &--production {
+    background-image: url("../img/product-1.webp");
+  }
+
+  &--mounting {
+    background-image: url("../img/product-2.webp");
+  }
+
+  &--complete {
+    background-image: url("../img/product-3.webp");
+  }
+
+  &:hover {
+    border: 3px solid #00B2FF;
+
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: block;
+    width: 63px;
+    height: 63px;
+
+    background-color: #00B2FF;
+    background-image: url("../img/icon-more.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.product__item-caption {
+  margin: 0;
+  padding: 0;
+  width: 170px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: #FFFFFF;
+}
+
+@media (max-width: 1023px) {
+  .product {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+
+  .product__wrap-block {
+    width: auto;
+  }
+
+  .product__caption {
+    margin-left: 0;
+    margin-bottom: 48px;
+    width: 620px;
+    line-height: 1.4;
+  }
+
+  .product__list {
+    display: block;
+  }
+
+  .product__item {
+    margin: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .product__link {
+    padding-top: 40px;
+    padding-left: 42px;
+    min-height: 262px;
+
+    &--production {
+      background-image: url("../img/product-1-tablet.webp");
+    }
+
+    &--mounting {
+      background-size: 110% auto;
+      background-position: -30px center;
+    }
+
+    &--complete {
+      background-image: url("../img/product-3-tablet.webp");
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .product {
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+
+  .product__caption {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    width: auto;
+  }
+
+  .product__item {
+    margin: 0 0 24px;
+  }
+
+  .product__link {
+    padding-top: 20px;
+    padding-left: 32px;
+
+    &--production {
+      background-image: url("../img/product-1-mobile.webp");
+    }
+
+    &--mounting {
+      background-position: -10px center;
+    }
+
+    &--complete {
+      background-image: url("../img/product-3-mobile.webp");
+    }
+  }
+}
