@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SmartDevice</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
+  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
 </head>
 <body>
   <div style="display: none;">
@@ -381,7 +383,7 @@
       </div>
     </div>
   </footer>
-  <section class="popap">
+  <section class="popap hidden">
     <form class="popap__form"  action="#" method="GET">
       <h2 class="popap__caption">Закажите звонок</h2>
       <p class="popap__text">
@@ -403,5 +405,10 @@
       </button>
     </form>
   </section>
+  <script src="js/script.js"></script>
+  <script>
+    var webpMachine = new webpHero.WebpMachine();
+    webpMachine.polyfillDocument();
+  </script>
 </body>
 </html>
