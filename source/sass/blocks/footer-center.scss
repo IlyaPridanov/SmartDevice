@@ -137,10 +137,6 @@
     }
   }
 
-  .footer-center__list--mobile-hidden {
-    display: none;
-  }
-
   .footer-center__caption {
     letter-spacing: 0.6px;
   }
@@ -148,5 +144,13 @@
   .footer-center__list {
     margin-top: 25px;
     width: 210px;
+
+    &--mobile-hidden {
+      display: none;
+    }
+
+    &--mobile-two {
+      margin-top: 0;
+    }
   }
 }

@@ -8,6 +8,8 @@ window.onload = function () {
   var name = document.querySelector('#popap-name');
   var tel = document.querySelector('#popap-tel');
   var textbox = document.querySelector('#textbox');
+  var advantagesLink = document.querySelectorAll('.advantages__link');
+  var footerCaptionLink = document.querySelectorAll('.footer-center__caption-block');
 
   openPopap.addEventListener('click', function (e) {
     e.preventDefault();
@@ -47,4 +49,28 @@ window.onload = function () {
   getLocalSave(name);
   getLocalSave(tel);
   getLocalSave(textbox);
+
+  for (var i = 0; i < advantagesLink.length; i++) {
+    advantagesLink[i].addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  }
+
+  for (var j = 0; j < footerCaptionLink.length; j++) {
+    footerCaptionLink[j].addEventListener('click', function (e) {
+      e.preventDefault();
+      var parent = this.parentNode;
+      var parentUse = parent.querySelector('use');
+      parent.classList.toggle('active');
+      if (parent.classList.contains('active')) {
+        parentUse.setAttributeNS('http://www.w3.org/1999/xlink', "href", "#icon-plus");
+      } else {
+        parentUse.setAttributeNS('http://www.w3.org/1999/xlink', "href", "#icon-minus");
+      }
+      var parentList = parent.querySelectorAll('ul');
+      for (var k = 0; k < parentList.length; k++) {
+        parentList[k].classList.toggle('footer-center__list--mobile-hidden');
+      }
+    });
+  }
 };
