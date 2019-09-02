@@ -4,6 +4,15 @@
   /*background: rgb(0, 0, 0);*/
 }
 
+.footer__up {
+  flex-grow: 3;
+  margin-right: 40px;
+}
+
+.footer__center {
+  flex-grow: 4;
+}
+
 .footer__flex-block {
   margin: 0 15px;
   padding-top: 60px;
@@ -14,6 +23,15 @@
 }
 
 @media (max-width: 1023px) {
+  .footer__up {
+    flex-grow: 0;
+    margin-right: 0;
+  }
+
+  .footer__center {
+    flex-grow: 0;
+  }
+
   .footer__flex-block {
     display: block;
     margin: 0;
