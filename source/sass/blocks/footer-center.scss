@@ -142,11 +142,19 @@
   }
 
   .footer-center__list {
+    display: block;
     margin-top: 25px;
     width: 210px;
+    height: auto;
+    transition: all 1s linear;
+
 
     &--mobile-hidden {
       display: none;
+    }
+
+    &--mobile-visuallyhidden {
+      opacity: 0;
     }
 
     &--mobile-two {

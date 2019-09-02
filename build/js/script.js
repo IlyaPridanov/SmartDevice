@@ -18,7 +18,6 @@ window.onload = function () {
   });
 
   popap.addEventListener('click', function (event) {
-    console.log(event.target);
     if (event.target === this) {
       popap.classList.add('hidden');
       name.blur();
@@ -70,6 +69,7 @@ window.onload = function () {
       var parentList = parent.querySelectorAll('ul');
       for (var k = 0; k < parentList.length; k++) {
         parentList[k].classList.toggle('footer-center__list--mobile-hidden');
+        parentList[k].classList.toggle('footer-center__list--mobile-visuallyhidden');
       }
     });
   }
