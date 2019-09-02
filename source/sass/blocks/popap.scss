@@ -132,6 +132,12 @@
   border-radius: 5px;
 
   background-color: #00B2FF;
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 0.6;
+  }
 }
 
 .popap__checkbox-label {
@@ -162,6 +168,12 @@
 
     background-image: none;
   }
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 0.6;
+  }
 }
 
 .popap__checkbox:checked ~ .popap__checkbox-label {
@@ -183,4 +195,10 @@
 
   border: none;
   background: none;
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 0.6;
+  }
 }

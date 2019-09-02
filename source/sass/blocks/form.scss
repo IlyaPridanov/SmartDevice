@@ -107,6 +107,12 @@
   border-radius: 5px;
 
   background-color: #00B2FF;
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 0.6;
+  }
 }
 
 .form__checkbox-label {
@@ -136,6 +142,12 @@
     border: 1px solid #FFFFFF;
 
     background-image: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 0.6;
   }
 }
 
