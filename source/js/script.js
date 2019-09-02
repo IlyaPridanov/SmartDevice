@@ -2,6 +2,7 @@
 
 window.onload = function () {
 
+  var body = document.querySelector('body');
   var openPopap = document.querySelector('.header__call-link');
   var closePopap = document.querySelector('.popap__close');
   var popap = document.querySelector('.popap');
@@ -13,6 +14,7 @@ window.onload = function () {
 
   openPopap.addEventListener('click', function (e) {
     e.preventDefault();
+    body.style.overflow = 'hidden';
     popap.classList.remove('hidden');
     name.focus();
   });
@@ -20,12 +22,14 @@ window.onload = function () {
   popap.addEventListener('click', function (event) {
     if (event.target === this) {
       popap.classList.add('hidden');
+      body.style.overflow = 'visible';
       name.blur();
     }
   });
 
   closePopap.addEventListener('click', function (e) {
     e.preventDefault();
+    body.style.overflow = 'visible';
     name.blur();
     popap.classList.add('hidden');
   });
@@ -34,6 +38,7 @@ window.onload = function () {
     if (e.keyCode === 27) {
       e.preventDefault();
       name.blur();
+      body.style.overflow = 'visible';
       popap.classList.add('hidden');
     }
   });
