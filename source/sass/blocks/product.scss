@@ -42,18 +42,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &--production {
-    background-image: url("../img/product-1.png");
-  }
-
-  &--mounting {
-    background-image: url("../img/product-2.png");
-  }
-
-  &--complete {
-    background-image: url("../img/product-3.png");
-  }
-
   &:hover {
     border: 3px solid #00B2FF;
 
@@ -64,7 +52,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    right: 1px;
+    right: 0;
 
     display: block;
     width: 63px;
@@ -75,6 +63,30 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
+}
+
+.no-webp .product__link--production {
+  background-image: url("../img/product-1.png");
+}
+
+.webp .product__link--production {
+  background-image: url("../img/product-1.webp");
+}
+
+.no-webp .product__link--mounting {
+  background-image: url("../img/product-2.png");
+}
+
+.webp .product__link--mounting {
+  background-image: url("../img/product-2.webp");
+}
+
+.no-webp .product__link--complete {
+  background-image: url("../img/product-3.png");
+}
+
+.webp .product__link--complete {
+  background-image: url("../img/product-3.webp");
 }
 
 .product__item-caption {
@@ -118,18 +130,26 @@
     padding-left: 42px;
     min-height: 262px;
 
-    &--production {
-      background-image: url("../img/product-1-tablet.webp");
-    }
-
     &--mounting {
       background-size: 110% auto;
       background-position: -30px center;
     }
+  }
 
-    &--complete {
-      background-image: url("../img/product-3-tablet.webp");
-    }
+  .no-webp .product__link--production {
+    background-image: url("../img/product-1-tablet.png");
+  }
+
+  .webp .product__link--production {
+    background-image: url("../img/product-1-tablet.webp");
+  }
+
+  .no-webp .product__link--complete {
+    background-image: url("../img/product-3-tablet.png");
+  }
+
+  .webp .product__link--complete {
+    background-image: url("../img/product-3-tablet.webp");
   }
 }
 
@@ -153,16 +173,24 @@
     padding-top: 20px;
     padding-left: 32px;
 
-    &--production {
-      background-image: url("../img/product-1-mobile.webp");
-    }
-
     &--mounting {
       background-position: -10px center;
     }
+  }
 
-    &--complete {
-      background-image: url("../img/product-3-mobile.webp");
-    }
+  .no-webp .product__link--production {
+    background-image: url("../img/product-1-mobile.png");
+  }
+
+  .webp .product__link--production {
+    background-image: url("../img/product-1-mobile.webp");
+  }
+
+  .no-webp .product__link--complete {
+    background-image: url("../img/product-3-mobile.png");
+  }
+
+  .webp .product__link--complete {
+    background-image: url("../img/product-3-mobile.webp");
   }
 }

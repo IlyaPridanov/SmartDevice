@@ -4,9 +4,16 @@
   padding-top: 203px;
   padding-bottom: 274px;
 
-  background-image: url("../img/triangle-1-desktop.webp");
   background-repeat: no-repeat;
   background-position: 80% 160px;
+}
+
+.no-webp .capital-screen {
+  background-image: url("../img/triangle-1-desktop.png");
+}
+
+.webp .capital-screen {
+  background-image: url("../img/triangle-1-desktop.webp");
 }
 
 .capital-screen__caption {
@@ -100,9 +107,16 @@
   .capital-screen {
     padding-top: 113px;
     padding-bottom: 163px;
-    background-image: url("../img/triangle-1-tablet.png");
     background-repeat: no-repeat;
     background-position: 156% 7px;
+  }
+
+  .no-webp .capital-screen {
+    background-image: url("../img/triangle-1-tablet.png");
+  }
+
+  .webp .capital-screen {
+    background-image: url("../img/triangle-1-tablet.webp");
   }
 
   .capital-screen__caption {
@@ -111,7 +125,7 @@
     width: 470px;
 
     font-size: 60px;
-    line-height: calc(70 / 60);
+    line-height: 1.17;
   }
 
   .capital-screen__text {
@@ -150,8 +164,15 @@
     padding-top: 230px;
     padding-bottom: 70px;
 
-    background-image: url("../img/triangle-1-mobile.png");
     background-position: -122% 15px;
+  }
+
+  .no-webp .capital-screen {
+    background-image: url("../img/triangle-1-mobile.png");
+  }
+
+  .webp .capital-screen {
+    background-image: url("../img/triangle-1-mobile.webp");
   }
 
   .capital-screen__caption {

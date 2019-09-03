@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SmartDevice</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
-  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
+  <script src="js/modernizr-custom.js"></script>
 </head>
 <body>
   <div style="display: none;">
@@ -75,7 +74,11 @@
           </span>
         </a>
         <div class="capital-screen__img-block">
-          <img class="capital-screen__img" src="img/cart.webp" alt="cart" width="705" height="515">
+          <picture>
+            <source srcset="img/cart.webp" type="image/webp">
+            <source srcset="img/cart.png" type="image/png">
+            <img class="capital-screen__img" src="img/cart.png" alt="cart" width="705" height="515">
+          </picture>
         </div>
       </div>
     </section>
@@ -138,7 +141,7 @@
             </ul>
           </section>
           <section class="about">
-            <img class="about__img" src="../img/2005.webp" alt="2005" width="130" height="348">
+            <img class="about__img" src="img/2005.png" alt="2005" width="130" height="348">
             <div class="about__flex-item">
               <h2 class="about__caption screen-caption">О компании</h2>
               <p class="about__text">
@@ -161,44 +164,45 @@
           </section>
         </div>
       </div>
-
     </div>
     <section class="main__product product">
       <div class="container">
-
-          <h2 class="product__caption screen-caption">
-            Service Device предлагает следующие товары и услуги
-          </h2>
-          <ul class="product__list">
-            <li class="product__item">
-              <a href="#" class="product__link product__link--production">
-                <h3 class="product__item-caption">
-                  Производство печатных плат
-                </h3>
-              </a>
-            </li>
-            <li class="product__item">
-              <a href="#" class="product__link product__link--mounting">
-                <h3 class="product__item-caption">
-                  Монтаж печатных плат
-                </h3>
-              </a>
-            </li>
-            <li class="product__item">
-              <a href="#" class="product__link product__link--complete">
-                <h3 class="product__item-caption">
-                  Комплектующие для светотехники
-                </h3>
-              </a>
-            </li>
-          </ul>
-
+        <h2 class="product__caption screen-caption">
+          Service Device предлагает следующие товары и услуги
+        </h2>
+        <ul class="product__list">
+          <li class="product__item">
+            <a href="#" class="product__link product__link--production">
+              <h3 class="product__item-caption">
+                Производство печатных плат
+              </h3>
+            </a>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link product__link--mounting">
+              <h3 class="product__item-caption">
+                Монтаж печатных плат
+              </h3>
+            </a>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link product__link--complete">
+              <h3 class="product__item-caption">
+                Комплектующие для светотехники
+              </h3>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="main__form-screen form-screen">
       <div class="container">
         <div class="form-screen__wrap-block">
-          <img class="form-screen__img" src="img/plane.webp" alt="plane">
+          <picture>
+            <source srcset="img/plane.webp" type="image/webp">
+            <source srcset="img/plane.png" type="image/png">
+            <img class="form-screen__img" src="img/plane.png" alt="plane">
+          </picture>
           <form class="form-screen__form form" action="#" method="GET">
             <h2 class="form__caption screen-caption">
               Остались вопросы? Задайте их нам!
@@ -407,9 +411,5 @@
     </form>
   </section>
   <script src="js/script.js"></script>
-  <script>
-    var webpMachine = new webpHero.WebpMachine();
-    webpMachine.polyfillDocument();
-  </script>
 </body>
 </html>

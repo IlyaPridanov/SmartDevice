@@ -3,12 +3,22 @@
   padding-bottom: 112px;
 
   background-color: #00B2FF;
+  background-repeat: no-repeat;
+  background-position: 15% center, 99.2% 39px, 100% 285px;
+}
+
+.no-webp .form-screen {
+  background-image:
+    url("../img/triangle-1-desktop.png"),
+    url("../img/triangle-7-desktop.svg"),
+    url("../img/triangle-8-desktop.svg");
+}
+
+.webp .form-screen {
   background-image:
     url("../img/triangle-1-desktop.webp"),
     url("../img/triangle-7-desktop.svg"),
     url("../img/triangle-8-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: 15% center, 99.2% 39px, 100% 285px;
 }
 
 .form-screen__wrap-block {
@@ -31,6 +41,14 @@
     padding-top: 85px;
     padding-bottom: 103px;
 
+    background-image: none;
+  }
+
+  .no-webp .form-screen {
+    background-image: none;
+  }
+
+  .webp .form-screen {
     background-image: none;
   }
 
