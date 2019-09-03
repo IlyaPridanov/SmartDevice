@@ -5,7 +5,7 @@
   color: #FFFFFF;
 }
 
-.form__flex-block {
+.form__row {
   display: flex;
 }
 
@@ -180,7 +180,7 @@
     width: 280px;
   }
 
-  .form__flex-block {
+  .form__row {
     justify-content: space-between;
     margin-left: 4px;
   }
@@ -219,7 +219,7 @@
     width: auto;
   }
 
-  .form__flex-block {
+  .form__row {
     display: block;
     margin-left: 0;
   }
