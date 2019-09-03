@@ -11,6 +11,7 @@ window.onload = function () {
   var textbox = document.querySelector('#textbox');
   var advantagesLink = document.querySelectorAll('.advantages__link');
   var footerCaptionLink = document.querySelectorAll('.footer-center__caption-block');
+  var formTel = document.getElementById('form-tel');
 
   openPopap.addEventListener('click', function (e) {
     e.preventDefault();
@@ -78,4 +79,13 @@ window.onload = function () {
       }
     });
   }
+
+  /*Добавляет маску*/
+
+
+  var maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  var mask1 = IMask(tel, maskOptions);
+  var mask2 = IMask(formTel, maskOptions);
 };

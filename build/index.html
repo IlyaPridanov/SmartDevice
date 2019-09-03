@@ -7,6 +7,7 @@
   <title>SmartDevice</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/modernizr-custom.js"></script>
+  <script src="https://unpkg.com/imask"></script>
 </head>
 <body>
   <div style="display: none;">
@@ -276,7 +277,7 @@
             <p class="form__text">Мы проконсультируем Вас бесплатно</p>
             <div class="form__row">
               <input type="text" class="form__input" placeholder="Имя" name="name" required="">
-              <input type="tel" class="form__input" placeholder="Телефон" name="tel" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+              <input type="tel" class="form__input" placeholder="Телефон" name="tel" required="" id="form-tel">
             </div>
             <textarea class="form__textarea" name="question" placeholder="Ваш вопрос" required=""></textarea>
             <div class="form__row">
@@ -458,7 +459,7 @@
         Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
       </p>
       <input type="text" id="popap-name" class="popap__input" placeholder="Имя" name="name" required="">
-      <input type="tel" id="popap-tel" class="popap__input" placeholder="Телефон" name="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="">
+      <input type="tel" id="popap-tel" class="popap__input" placeholder="Телефон" name="tel" required="">
       <textarea class="popap__textarea" id="textbox" name="question" placeholder="Ваш вопрос" required=""></textarea>
       <button class="popap__submit" type="submit">Отправить</button>
       <input type="checkbox" class="popap__checkbox visually-hidden" id="form-popap-checkbox" name="checkbox" checked="" required="">
